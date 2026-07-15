@@ -1,0 +1,85 @@
+/** @type {import('tailwindcss').Config} */
+export default {
+  darkMode: 'class',
+  content: ['./index.html', './src/**/*.{js,ts,jsx,tsx}'],
+  theme: {
+    extend: {
+      colors: {
+        ink: {
+          DEFAULT: '#0F1222',
+          50: '#F4F4F8',
+          100: '#E5E5EF',
+          200: '#C6C6DA',
+          300: '#9C9CB8',
+          400: '#6B6B8F',
+          500: '#484868',
+          600: '#33334E',
+          700: '#23233A',
+          800: '#16162A',
+          900: '#0F1222',
+          950: '#080914',
+        },
+        brand: {
+          DEFAULT: '#4F46E5',
+          50: '#EEEDFC',
+          100: '#DDDBFA',
+          200: '#BBB6F4',
+          300: '#9992EE',
+          400: '#776EE8',
+          500: '#4F46E5',
+          600: '#3730B8',
+          700: '#2A2589',
+          800: '#1C195C',
+          900: '#0E0C2E',
+        },
+        teal: {
+          DEFAULT: '#14B8A6',
+          50: '#EAFBF8',
+          100: '#D0F5EF',
+          400: '#2DD4C4',
+          500: '#14B8A6',
+          600: '#0E8F81',
+        },
+        amber: {
+          DEFAULT: '#F59E0B',
+          50: '#FEF6E7',
+          400: '#FBBF54',
+          500: '#F59E0B',
+          600: '#C77D08',
+        },
+        rose: {
+          DEFAULT: '#E11D48',
+          50: '#FDECEF',
+          400: '#F0577C',
+          500: '#E11D48',
+          600: '#B21339',
+        },
+        violet: {
+          DEFAULT: '#7C3AED',
+          400: '#A78BFA',
+          500: '#7C3AED',
+          600: '#6D28D9',
+        },
+        emerald: {
+          DEFAULT: '#10B981',
+          400: '#34D399',
+          500: '#10B981',
+          600: '#059669',
+        },
+      },
+      fontFamily: {
+        display: ['"Space Grotesk"', 'sans-serif'],
+        body: ['Inter', 'sans-serif'],
+        mono: ['"JetBrains Mono"', 'monospace'],
+      },
+      boxShadow: {
+        card: '0 1px 2px rgba(15, 18, 34, 0.04), 0 8px 24px -8px rgba(15, 18, 34, 0.08)',
+        'card-hover': '0 4px 12px rgba(15, 18, 34, 0.06), 0 16px 40px -12px rgba(15, 18, 34, 0.14)',
+      },
+      backgroundImage: {
+        'brand-gradient': 'linear-gradient(135deg, #4F46E5 0%, #6E5AF0 50%, #14B8A6 150%)',
+      },
+    },
+  },
+  plugins: [],
+}
